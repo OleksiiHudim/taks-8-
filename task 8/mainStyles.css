@@ -1,0 +1,140 @@
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: darkblue;
+  text-shadow: 1px 2px rgba(112, 107, 107, 0.767);
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.container {
+  background-color: aquamarine;
+  width: 90vw;
+  height: 620px;
+  margin: 8vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 15px groove darkblue;
+}
+
+.container .bubble {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00fff2), to(#203aad));
+  background-image: linear-gradient(to bottom right, #00fff2, #203aad);
+  border-radius: 50%;
+  margin-bottom: 3vh;
+  -webkit-animation: bubble 0.5s linear alternate infinite;
+          animation: bubble 0.5s linear alternate infinite;
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 55%, 0) scale3d(0.7, 1, 1);
+            transform: translate3d(0, 55%, 0) scale3d(0.7, 1, 1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0) scale3d(0.8, 0.3, 1);
+            transform: translate3d(0, 100%, 0) scale3d(0.8, 0.3, 1);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 55%, 0) scale3d(0.7, 1, 1);
+            transform: translate3d(0, 55%, 0) scale3d(0.7, 1, 1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0) scale3d(0.8, 0.3, 1);
+            transform: translate3d(0, 100%, 0) scale3d(0.8, 0.3, 1);
+  }
+}
+
+.container .bubble1 {
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.container .bubble2 {
+  width: 250px;
+  height: 250px;
+  -webkit-animation-delay: 5ms;
+          animation-delay: 5ms;
+}
+
+.container .bubble3 {
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.container .bubble4 {
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 10ms;
+          animation-delay: 10ms;
+}
+
+.container .bubble5 {
+  width: 375px;
+  height: 375px;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.container .bubble6 {
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 40ms;
+          animation-delay: 40ms;
+}
+
+.container .bubble7 {
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
+}
+/*# sourceMappingURL=mainStyles.css.map */
